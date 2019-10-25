@@ -1,4 +1,25 @@
 body {
   color: red;
 }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.placeForCanvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 512px;
+  height: 512px;
+}
+
+canvas {
+  background-color: black;
+}
 /*# sourceMappingURL=main.css.map */
