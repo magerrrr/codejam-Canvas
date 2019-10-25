@@ -14,6 +14,9 @@ async function getArr(){
     })});
     console.log(arr);
 
+    let size = arr.length;
+
+    let pixelSize = 512/size;
     let x = 0;
     let y = 0;
 
@@ -22,19 +25,12 @@ async function getArr(){
       arr[i].forEach(val => {
         console.log(val);
         ctx.fillStyle = `#${val}`;
-        ctx.fillRect(x,y,50,50);
-        x +=50;
+        ctx.fillRect(x,y,pixelSize,pixelSize);
+        x +=pixelSize;
       })
 
       x=0;
-      y+=50;
+      y+=pixelSize;
   }
 }
 getArr();
-
-
-
-
-
-//ctx.fillStyle = "red";
-//ctx.fillRect(0,0,100,100);
