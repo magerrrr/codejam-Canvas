@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/main.css">
+  <title>codejam-Canvas</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <a class="navbar-brand ml-4 mr-auto mt-2 mt-lg-0" href="#">CodeJam - Canvas</a>
+  </nav>
+
+
+  <div class="wrapper">
+    <div class="instruments-container">
+      <div class="list-instruments-container">
+        <ul class="list">
+          <li class="list-item">
+            <img src="img/icon-paint bucket.png" class="list-img" alt="">Paint bucket
+          </li>
+          <li class="list-item">
+            <img src="img/icon-choose-color.png" class="list-img" alt="">Choose color
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="list-item">
+            <img src="img/icon-move.png" class="list-img" alt="">Move
+          </li>
+          <li class="list-item">
+            <img src="img/icon-transform.png" class="list-img" alt="">Transfom
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-instruments-container">
+        <ul class="list">
+          <li class="list-item">
+            <div class="round gray"></div>Current color
+          </li>
+          <li class="list-item">
+            <div class="round green"></div>Prev color
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="list-item">
+            <div class="round red"></div>red
+          </li>
+          <li class="list-item">
+            <div class="round blue"></div>blue
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="placeForCanvas">
+      <canvas width="512" height="512" id="canvas">
+      </canvas>
+    </div>
+    <div class="select-case">
+      <ul class="list-for-select">
+        <li class="list-for-select-item">4*4</li>
+        <li class="list-for-select-item">32*32</li>
+        <li class="list-for-select-item">256*256</li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
