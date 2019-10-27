@@ -1,7 +1,7 @@
 let url = '';
 let arr = [];
 
-const selectedCase = document.querySelector('.selectCase');
+const selectedCase = document.querySelector('.select-case');
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
