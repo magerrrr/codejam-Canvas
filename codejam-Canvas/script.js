@@ -47,6 +47,7 @@ async function getArr(){
     for( let i=0; i< arr.length; i++){
 
       if(arr[0][0].length === 6){
+
         arr[i].forEach(val => {
           ctx.fillStyle = `#${val}`; // # FFFFFF
           ctx.fillRect(x,y,pixelSize,pixelSize);
@@ -63,7 +64,6 @@ async function getArr(){
 
       x=0;
       y+=pixelSize;
-
     }
 
     //console.log(size);

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
   color:red;
 }
 .wrapper{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .placeForCanvas{
   display: flex;
@@ -13,4 +15,39 @@ body {
 }
 canvas{
   background-color: black;
+}
+.list-instruments-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 79px;
+  margin-left: 29px;
+  width: 228px;
+  height: 246px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.list{
+  list-style-type: none;
+  padding-left: 0px;
+}
+.list:first-child{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.list-item{
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  height: 48px;
+  width: 196px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+}
+.list-img{
+  margin-right: 33px;
+  width: 24px;
+  height: 24px;
 }
