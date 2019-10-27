@@ -24,6 +24,16 @@ canvas {
   background-color: black;
 }
 
+.instruments-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .list-instruments-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +49,30 @@ canvas {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.round {
+  margin-right: 33px;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.gray {
+  background: #C4C4C4;
+}
+
+.green {
+  background: #41F795;
+}
+
+.blue {
+  background: #41B6F7;
+}
+
+.red {
+  background: #F74141;
 }
 
 .list {
